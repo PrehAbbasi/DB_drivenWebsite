@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard</title>
+<link rel="stylesheet" type="text/css" href="style3.css">
+</head>
+<body>
+	<header>
+		<a href="#" class="logo">Dashboard</a>
+		<div class="menuToggle"></div>
+		<ul class="nav">
+			<li class="active"><a href="profile.html">Profile</a></li>
+			<li><a href="#PersonalTab">Personal Tab</a></li>
+			<li><a href="#Tasks">Tasks</a></li>
+			<li><a href="#Contact">Contact</a></li>
+		</ul>
+	</header>
+
+
+	<section id="Profile">
+		<div class="content">
+			<h2>Student Personal Management System</h2>
+			<p>"Welcome to the Students Personal Management System! Our app is designed to help you keep track of all aspects of your academic and personal life. With our user-friendly interface, you can easily manage your schedule, assignments, deadlines, and more.
+
+				So, if you're looking for an all-in-one solution to help you manage your student life, look no further than the Students Personal Management System. Start managing today and taking control of your academic journey!".</p>
+			<a href="#" class="btn"> Exclusive Lounge</a>
+		</div>
+		<img src="12.png" class="study">
+	</section>
+
+
+
+	<section id="PersonalTab">
+		<div class="secText">
+			<h2>Personal Tab </h2>
+			<p>Your very personal tab offers you to digitally log your diary, mark your achievements, log your ideas and much more !</p>
+		</div>
+		<div class="content">
+			<div class="PersonalTabBx">
+				<img src="icon1.png" alt="">
+				<h3>Digital Diary</h3>
+			</div>
+			<div class="PersonalTabBx">
+				<img src="icon2.png" alt="">
+				<h3>Personal Marking</h3>
+			</div>
+			<div class="PersonalTabBx">
+				<img src="icon3.png" alt="">
+				<h3>Connect via mobile app</h3>
+			</div>
+			<div class="PersonalTabBx">
+				<img src="icon4.png" alt="">
+				<h3>Video Log</h3>
+			</div>
+		</div>
+		<div class="center">
+			<a href="#" class="btn">Enter</a>
+		</div>
+	</section>
+
+
+	<section id="Tasks">
+		<div class="secText">
+			<h2>My Daily Tasks</h2>
+			<p>Log your daily, weekly and monthly tasks to stay more organized. Customize your tasks according to your priority in one go! 
+			</p>
+		</div>
+		<div class="content">
+			<div class="imgBx">
+				<img src="img1.jpg" alt="">
+			</div>
+			<div class="imgBx">
+				<img src="img2.jpg" alt="">
+			</div>
+			<div class="imgBx">
+				<img src="img3.jpg" alt="">
+			</div>
+			<div class="imgBx">
+				<img src="img4.jpg" alt="">
+			</div>
+			<div class="imgBx">
+				<img src="img5.jpg" alt="">
+			</div>
+			<div class="imgBx">
+				<img src="img6.jpg" alt="">
+			</div>
+		</div>
+		<div class="center">
+			<a href="#" class="btn">View More</a>
+		</div>
+	</section>
+
+
+	<section id="Contact">
+		<div class="secText">
+			<h2>Connect with our team</h2>
+			<p>For aspiring students looking for side hustle, you can join our team too. Send your portfolio or CV to our team and we will get back to you as soon as possible</p>
+		</div>
+		<div class="content">
+			<a href="#">
+				<ion-icon name="mail-outline"></ion-icon> SPMS_hireme@dummy.com
+			</a>
+			<a href="#">
+				<ion-icon name="call-outline"></ion-icon> +92 307 4537819
+			</a>
+		
+			<a href="#">
+				<ion-icon name="logo-skype"></ion-icon> skype
+			</a>
+		
+			<a href="#">
+				<ion-icon name="logo-whatsapp"></ion-icon> whatsapp
+			</a>
+		</div>
+		<div class="center">
+			<p class="copyrights">Copyrights © 2023 <a href="#"> M&P League</a>. All Right Reserved.</p>
+		</div>
+	</section>
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	<script>
+		const list = document.querySelectorAll('.nav li');
+		function active(){
+			list.forEach((i) =>
+			i.classList.remove('active'));
+			this.classList.add('active');
+		}
+		list.forEach((i) =>
+		i.addEventListener('click', active));
+
+		let menuToggle = document.querySelector('.menuToggle');
+		let header = document.querySelector('header');
+		menuToggle.onclick = function(){
+			header.classList.toggle('active')
+		}
+	</script>
+</body>
+</html>
